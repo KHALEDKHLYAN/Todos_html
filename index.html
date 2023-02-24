@@ -1,15 +1,25 @@
+<!-- Declare that this is an HTML5 document -->
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
+        <!-- Specify the character encoding and viewport settings -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Set the title of the web page -->
         <title>ToDo App</title>
+        <!-- Link to an external stylesheet file -->
         <link rel="stylesheet" href="style.css" />
+        <!-- Link to an external JavaScript file -->
         <script src="script.js" defer></script>
     </head>
+
     <body>
+        <!-- Create a heading for the web page -->
         <h1>todos</h1>
+        <!-- Create a form element for adding new todos -->
         <form id="form">
+            <!-- Create a text input field for entering new todos -->
             <input
                 type="text"
                 id="input"
@@ -17,11 +27,11 @@
                 placeholder="Enter your todo"
                 autocomplete="off"
             />
+            <!-- Create an unordered list to display the todos -->
             <ul class="todos" id="todos"></ul>
         </form>
-        <small
-            >Left click to toggle complete. <br />Right click to delete the
-            todo.</small
-        >
+        <!-- Add a small text with instructions for interacting with the todos -->
+        <small>Left click to toggle complete. <br />Right click to delete the todo.</small>
     </body>
+
 </html>
